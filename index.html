@@ -51,21 +51,36 @@
 
         #list a {
             border: solid .25vw #ffffff;
-            text-align: center;
-            color: #ffffff;
             border-radius: .5vw;
             padding: .5vw;
-            text-decoration: none !important;
             cursor: pointer;
-            font-weight: bold;
             display: flex;
+            flex-direction: column;
+            gap: .25vw;
             align-items: center;
             justify-content: center;
             box-sizing: border-box;
             min-height: 6vw;
-            font-size: 1.25vw;
+            text-decoration: none !important;
+        }
+
+        .title, .author {
+            text-align: center;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: sans-serif;
             text-align: center;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.25vw;
+        }
+
+        .author {
+            font-size: .75vw;
         }
     </style>
 </head>
@@ -73,23 +88,78 @@
 <body>
     <div class="about">Hi. Here is a list of PDFs that can be read by you or by other people:</div>
     <div id="list">
-        <a href="./pdf/exitvoiceandloyalty.pdf">Exit, Voice and Loyalty</a>
-        <a href="./pdf/fangednoumena.pdf">Fanged Noumena</a>
-        <a href="./pdf/intelligenceandspirit.pdf">Intelligence and Spirit</a>
-        <a href="./pdf/lapartmaudite.pdf">La part maudite</a>
-        <a href="./pdf/leviathananditsenemies.pdf">Leviathan and its Enemies</a>
-        <a href="./pdf/methodologyofpossession.pdf">Methodology of Possession</a>
-        <a href="./pdf/neoreactionarycanon.pdf">Neoreactionary Canon</a>
-        <a href="./pdf/nicklandreignition.pdf">Nick Land: Reignition</a>
-        <a href="./pdf/templexity.pdf">Templexity</a>
-        <a href="./pdf/themachiavellians.pdf">The Machiavellians</a>
-        <a href="./pdf/themanversusthestate.pdf">The Man Versus the State</a>
-        <a href="./pdf/themenaceoftheherd.pdf">The Menace of the Herd</a>
-        <a href="./pdf/thepopulistdelusion.pdf">The Populist Delusion</a>
-        <a href="./pdf/therulingclass.pdf">The Ruling Class</a>
-        <a href="./pdf/thethirstforannihilation.pdf">The Thirst for Annihilation</a>
-        <a href="./pdf/unleashingthenumogram.pdf">Unleashing the Numogram</a>
-        <a href="./pdf/xenosystemsfragments.pdf">Xenosystems Fragments</a>
+        <a href="./pdf/exitvoiceandloyalty.pdf">
+            <div class="title">Exit, Voice and Loyalty</div>
+            <div class="author">By Albert O. Hirschman</div>
+        </a>
+        <a href="./pdf/fangednoumena.pdf">
+            <div class="title">Fanged Noumena</div>
+            <div class="author">By Nick Land</div>
+        </a>
+        <a href="./pdf/intelligenceandspirit.pdf">
+            <div class="title">Intelligence and Spirit</div>
+            <div class="author">By Reza Negarestani</div>
+        </a>
+        <a href="./pdf/lapartmaudite.pdf">
+            <div class="title">La part maudite (Partie I)</div>
+            <div class="author">By Georges Bataille</div>
+        </a>
+        <a href="./pdf/leviathananditsenemies.pdf">
+            <div class="title">Leviathan and its Enemies</div>
+            <div class="author">By Samuel T. Francis</div>
+        </a>
+        <a href="./pdf/methodologyofpossession.pdf">
+            <div class="title">Methodology of Possession</div>
+            <div class="author">By James Ellis</div>
+        </a>
+        <a href="./pdf/neoreactionarycanon.pdf">
+            <div class="title">Neoreactionary Canon</div>
+            <div class="author">By various authors</div>
+        </a>
+        <a href="./pdf/nicklandreignition.pdf">
+            <div class="title">Nick Land: Reignition</div>
+            <div class="author">By Nick Land</div>
+        </a>
+        <a href="./pdf/templexity.pdf">
+            <div class="title">Templexity</div>
+            <div class="author">By Nick Land</div>
+        </a>
+        <a href="./pdf/theaccursedshare.pdf">
+            <div class="title">The Accursed Share (Part II and III)</div>
+            <div class="author">By Georges Bataille</div>
+        </a>
+        <a href="./pdf/themachiavellians.pdf">
+            <div class="title">The Machiavellians</div>
+            <div class="author">By James Burnham</div>
+        </a>
+        <a href="./pdf/themanversusthestate.pdf">
+            <div class="title">The Man Versus the State</div>
+            <div class="author">By Herbert Spencer</div>
+        </a>
+        <a href="./pdf/themenaceoftheherd.pdf">
+            <div class="title">The Menace of the Herd</div>
+            <div class="author">By Erik Von Kuehnelt-Leddihn</div>
+        </a>
+        <a href="./pdf/thepopulistdelusion.pdf">
+            <div class="title">The Populist Delusion</div>
+            <div class="author">By Neema Parvini</div>
+        </a>
+        <a href="./pdf/therulingclass.pdf">
+            <div class="title">The Ruling Class</div>
+            <div class="author">By Gaetano Mosca</div>
+        </a>
+        <a href="./pdf/thethirstforannihilation.pdf">
+            <div class="title">The Thirst for Annihilation</div>
+            <div class="author">By Nick Land</div>
+        </a>
+        <a href="./pdf/unleashingthenumogram.pdf">
+            <div class="title">Unleashing the Numogram</div>
+            <div class="author">By Anders J. Aamodt</div>
+        </a>
+        <a href="./pdf/xenosystemsfragments.pdf">
+            <div class="title">Xenosystems Fragments</div>
+            <div class="author">By Nick Land</div>
+        </a>
     </div>
     <div class="about">These are all compressed to save on your bandwidth and drives.</div>
 </body>
